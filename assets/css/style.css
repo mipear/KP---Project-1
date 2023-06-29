@@ -1,32 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
 }
 
-body {
+body{
     font-family: 'Merriweather Sans', sans-serif;
-    color: #4d2396;
+    color: #777777;
 }
 
-h2 {
+h2{
     font-family: 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #555555;
+    color: #777777;
 }
 
-#logo {
+#logo{
     float: left;
-    font-size: 280%;
+    font-size: 300%;
+    margin-left: 30px;
 }
 
 #menu{
     font-size: 110%;
     list-style-type: none;
     letter-spacing: 4px;
+}
+
+#logo, #menu {
+    line-height: 75px;
 }
 
 #menu li {
@@ -39,3 +44,50 @@ h2 {
     color: inherit;
 }
 
+#menu a:hover {
+    border-bottom: 1px solid #4d2396;
+}
+
+.active{
+    border-bottom: 1px solid #4d2396;
+}
+
+/* if needing hero image, here is CSS:
+#hero-image{
+    height:600px;
+    width: 100%;
+    background: url(IMAGE LINK)
+} Rest is on videos. Lets image zoom and the text over the image
+*/
+
+
+@media screen and (max-width:943px) {
+
+    #menu{
+        clear:left;
+        float: left;
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 25px;
+    }
+}
+
+footer{
+    height: 150px;
+}
+
+.social-networks {
+    text-align: center;
+
+}
+
+.social-networks li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 160%;
+    margin: 1%;
+    padding: 5%;
+    color: #777777;
+}
