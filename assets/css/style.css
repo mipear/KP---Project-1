@@ -1,27 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
+/* Header */
+
+header{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }
 
+/* Body */
 body{
     font-family: 'Merriweather Sans', sans-serif;
-    color: #777777;
-}
-
-h2{
-    font-family: 'Merriweather Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 4px;
     color: #777777;
 }
 
 #logo{
     float: left;
     font-size: 300%;
-    margin-left: 30px;
+    margin-left: 5px;
 }
 
 #menu{
@@ -52,6 +48,14 @@ h2{
     border-bottom: 1px solid #4d2396;
 }
 
+/*colours*/
+
+.bg-color-contact {
+    background-color: #fff;
+}
+
+/* Home Page section */
+
 /* if needing hero image, here is CSS:
 #hero-image{
     height:600px;
@@ -60,55 +64,28 @@ h2{
 } Rest is on videos. Lets image zoom and the text over the image
 */
 
-.contact-heading {
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 20px;
-}
+/* Gallery section */
 
-.center-form {
-    padding-top: 10px;
-    margin: 0 auto;
-    max-width: 70%;
-}
-
-button[type="submit"] {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    color: #fafafa;
-    background-color: #e84610;
-}
-
-.bg-color-contact {
-    background-color: #fff;
-}
+/* Contact section */
 
 @media screen and (max-width:992px) {
 
     #menu{
         clear:left;
         float: left;
-        margin-left: 30px;
+        margin-left: 25px;
         margin-bottom: 20px;
         line-height: 25px;
-    }
-
-    .center-form {
-    padding-top: 30px;
-    min-height: 240px;
-    margin: 0 auto;
-    max-width: 50%;
-}
+    }  
 }
 
+/* Footer */
 footer{
     height: 150px;
 }
 
 .social-networks {
     text-align: center;
-
 }
 
 .social-networks li {
