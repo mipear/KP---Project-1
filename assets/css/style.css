@@ -2,31 +2,32 @@
 
 /* Header */
 
-header{
+header {
     margin: 0px;
     padding: 0px;
     border: 0px;
 }
 
 /* Body */
-body{
+body {
     font-family: 'Merriweather Sans', sans-serif;
     color: #777777;
 }
 
-#logo{
+#logo {
     float: left;
     font-size: 300%;
     margin-left: 5px;
 }
 
-#menu{
+#menu {
     font-size: 110%;
     list-style-type: none;
     letter-spacing: 4px;
 }
 
-#logo, #menu {
+#logo,
+#menu {
     line-height: 75px;
 }
 
@@ -41,11 +42,11 @@ body{
 }
 
 #menu a:hover {
-    border-bottom: 1px solid #4d2396;
+    border-bottom: 1px solid #777777;
 }
 
-.active{
-    border-bottom: 1px solid #4d2396;
+.active {
+    border-bottom: 1px solid #777777;
 }
 
 /*colours*/
@@ -56,29 +57,55 @@ body{
 
 /* Home Page section */
 
-#hero-image{
-    height:600px;
+#hero-image {
+    height: 600px;
     width: 100%;
-    background: url("assets/images/26042023101115-0001.jpg") no-repeat center center;
+    background: url("assets/images/Kevin Pearse (4).webp") no-repeat center center;
 
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-#hero-outer{
+#hero-outer {
     height: 600px;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
-@keyframes hero-zoon{
-    from{
+@keyframes hero-zoom {
+    from {
         transform: scale(1);
     }
-    to{
+
+    to {
         transform: scale(1.1);
     }
+}
+
+#cover-text, cover-text h2 {
+    color: #ffffff;
+}
+
+#cover-text {
+    font-size: 130%;
+    font-family: 'Merriweather Sans';
+    text-transform: uppercase;
+    letter-spacing: 4px;
+
+    width: 300px;
+    height: 200px;
+
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
 }
 
 /* Gallery section */
@@ -86,172 +113,64 @@ body{
 #photo {
     clear: both;
     line-height: 0;
-    column-count: 4; /* can specify less than 4 if less images */
-    column-gap: 0px; 
+    column-count: 4;
+    column-gap: 0px;
 }
 
-#photo img{
+#photo img {
     width: 100%;
 }
+
 /* Contact section */
 
-.fcf-body {
-    margin: 0;
-    font-family: 'Merriweather Sans', sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
+.bg-color-contact {
     background-color: #fff;
-    padding: 30px;
-    padding-bottom: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    max-width: 100%;
 }
 
-.fcf-form-group {
-    margin-bottom: 1rem;
+.contact-heading {
+    font-family: 'Merriweather Sans';
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 20px;
 }
 
-.fcf-input-group {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    width: 100%;
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
 }
 
-.fcf-form-control:focus {
-    border: 1px solid #313131;
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fafafa;
+    background-color: #e84610;
 }
 
-select.fcf-form-control[size],
-select.fcf-form-control[multiple] {
-    height: auto;
-}
-
-textarea.fcf-form-control {
-    font-family: 'Merriweather Sans', sans-serif;
-    height: auto;
-}
-
-label.fcf-label {
-    display: inline-block;
-    margin-bottom: 0.5rem;
-}
-
-.fcf-btn {
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .fcf-btn {
-        transition: none;
-    }
-}
-
-.fcf-btn:hover {
-    color: #212529;
-    text-decoration: none;
-}
-
-.fcf-btn:focus,
-.fcf-btn.focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.fcf-btn-primary {
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.fcf-btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.fcf-btn-primary:focus,
-.fcf-btn-primary.focus {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.fcf-btn-lg,
-.fcf-btn-group-lg>.fcf-btn {
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-}
-
-.fcf-btn-block {
-    display: block;
-    width: 100%;
-}
-
-.fcf-btn-block+.fcf-btn-block {
-    margin-top: 0.5rem;
-}
-
-input[type="submit"].fcf-btn-block,
-input[type="reset"].fcf-btn-block,
-input[type="button"].fcf-btn-block {
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* media queries */
 
 @media screen and (max-width:992px) {
 
-    #menu{
-        clear:left;
+    #menu {
+        clear: left;
         float: left;
         margin-left: 25px;
         margin-bottom: 20px;
         line-height: 25px;
-    }  
+    }
+}
+
+@media(min-width: 992px) {
+    .center-form {
+            padding-top: 30px;
+            min-height: 240px;
+            margin: 0 auto;
+            max-width: 50%;
+        }
 }
 
 /* Footer */
-footer{
+footer {
     height: 150px;
 }
 
