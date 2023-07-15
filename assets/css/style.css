@@ -58,13 +58,14 @@ body {
 /* Home Page section */
 
 #hero-image {
-    height: 300px; /*was 600px, testing different size */
+    height: 300px;
     width: 100%;
     background: url('/assets/images/Kevin Pearse (4).webp') no-repeat center center;
+    background-size: cover;
 
-   /* animation-name: hero-zoom;
+    animation-name: hero-zoom;
     animation-duration: 5s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 
 #hero-outer {
