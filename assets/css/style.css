@@ -109,6 +109,14 @@ body {
     position: absolute;
 }
 
+.artist-img {
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+/*where is about-box? is it necessary?*/
 .about-box {
     padding: 10px 5px 25px 5px;
     border-radius: 8px;
@@ -126,6 +134,24 @@ body {
     position: absolute;
     display: inline-block;
     width: 66%;
+}
+
+.row-table {
+    display: table;
+    text-align: center;
+}
+
+.section-column {
+    display: table-cell;
+    padding: 0 30px 30px;
+    float: none;
+}
+
+.section-heading {
+    font-family: 'Merriweather Sans';
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
 }
 
 /* Gallery section */
